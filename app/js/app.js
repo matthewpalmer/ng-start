@@ -1,6 +1,7 @@
 var employeeList = angular.module('employeeList', 
   ['employeeList.controllers', 'employeeList.services']);
-employeeList.config(['$routeProvider', function($routeProvider) {
+
+employeeList.config(function($routeProvider) {
   $routeProvider.when('/view1', {
     templateUrl: 'partials/view1.html',
     controller: 'MyCtrl1'
@@ -12,4 +13,4 @@ employeeList.config(['$routeProvider', function($routeProvider) {
   .otherwise({
     redirectTo: '/view1'
   });
-}]);
+});

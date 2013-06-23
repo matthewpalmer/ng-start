@@ -3,7 +3,6 @@ employeeList.controller('MyCtrl1', function ($scope, firstFactory) {
   $scope.employees = [];
   $scope.employees = firstFactory.getEmployees();
   $scope.addEmployee = function() {
-    console.log('add');
     $scope.employees.push({
       name: $scope.newEmployee.name, 
       city: $scope.newEmployee.city,
@@ -11,6 +10,6 @@ employeeList.controller('MyCtrl1', function ($scope, firstFactory) {
     });
   };
 });
-employeeList.controller('MyCtrl2', ['$scope', function ($scope) {
+employeeList.controller('MyCtrl2', function ($scope) {
   
-}]);
+});
