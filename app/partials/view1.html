@@ -1,0 +1,9 @@
+view1
+<ul>
+  <li ng-repeat='employee in employees'>{{employee.name}} - {{employee.age}} - {{employee.city}}</li>
+</ul>
+<h2>Add</h2>
+Name: <input type="text" ng-model='newEmployee.name'>
+City: <input type="text" ng-model='newEmployee.city'>
+Age: <input type="text" ng-model='newEmployee.age'>
+<button ng-click='addEmployee()'>Add Employee</button>
